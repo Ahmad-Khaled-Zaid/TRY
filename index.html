@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="  margin: 0; background-color: rgb(4,170,109);">
+
+  <main style=>
+    <nav style="background-color: black; padding: 10px; ">
+      <a href="#HOME" style="text-decoration: none; color: white; padding: 10px;">Home</a>
+      <a href="#Band" style="text-decoration: none; color: white; padding: 10px;">Band</a>
+      <a href="#Tour" style="text-decoration: none; color: white; padding: 10px;">Tour</a>
+      <a href="#Contact" style="text-decoration:none; color: white; padding: 10px;">Contact</a>
+
+    </nav>
+
+    <img src="pic/1.jpg" alt="" style="width:100%;" class="MySildes">
+    <img src="pic/2.jpg" alt="" style="width:100%;" class="MySildes">
+    <img src="pic/3.jpg" alt="" style="width:100%;" class="MySildes">
+    <p style="text-align: center; font-weight: bold; font-size: xxx-large;">THE BAND</p>
+
+
+    <p style="color: gray; text-align: center; font-size: x-large; position: relative; bottom: 30px;">We love music</p>
+    <p
+      style="font-size: 25px ; position: relative; bottom: 40px; padding-left: 100px; padding-right: 100px; text-align: justify;">
+      We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua.</p>
+
+
+    <img src="pic/4.jpg" alt="" style="width:30%;padding-left: 30px;margin-bottom: 20px;">
+    <img src="pic/4.jpg" alt="" style="width:30%;padding-left: 30px;margin-bottom: 20px;">
+    <img src="pic/4.jpg" alt="" style="width:30%;padding-left: 30px; margin-bottom: 20px;">
+    <footer style="background-color: black; padding: 50px;">
+      <p style="color: white; text-align: center;">Powerd by:&copy;Ahmad</p>
+      <img  style="margin-left: 660px; padding-right: 10px;" src="pic/fb-icon.png" alt="">
+      <img  style="padding-right: 10px;" src="pic/insta-icon.png" alt="">
+      <img src="pic/twit-icon.png" alt="">
+
+    </footer>
+
+
+
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("MySildes");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 1000);
+      }
+    </script>
+
+
+  </main>
+  <footer>
+
+  </footer>
+
+
+</body>
+
+</html>
